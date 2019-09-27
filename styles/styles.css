@@ -1,7 +1,13 @@
+@font-face {
+  font-family: Dosis;
+  src: url(https://fonts.googleapis.com/css?family=Dosis);
+}
+
 body {
-	text-align: center;
 	background-color: rgb(255,255,255);
 	margin: 0 10% 0 10%;
+	text-align: center;
+	font-family: Dosis;
 }
 
 h1 {
