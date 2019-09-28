@@ -1,16 +1,16 @@
-var frame = 1;
+var frame = 39;
 
 function expand() {
 	var topNav = document.getElementById("topNav");
 	if (topNav.className == "topNav") {
 		topNav.className += " responsive";
-		setInterval(expandTopNav, 5);
-		frame = 1;
+		var interval = setInterval(expandTopNav, 1);
+		frame = 40;
 		function expandTopNav() {
 			if (topNav && frame) {
-				if (frame == 150 || frame == 0) {
+				if (frame == 180 || frame == 39) {
 					clearInterval(interval);
-					frame = 1;
+					frame = 40;
 				}
 				else {
 					frame++;
@@ -20,8 +20,9 @@ function expand() {
 		}
 	}
 	else {
-		frame = 0;
+		frame = 39;
 		topNav.className = "topNav";
+		topNav.style.height = frame + 'px';
 	}
 }
 

@@ -27,7 +27,6 @@ div {
 	min-width: 480px;
 	height: 100%;
 	margin-left: -8px;
-	margin-top: -8px;
 	overflow: hidden;
 	text-align: center;
 }
@@ -40,14 +39,18 @@ div {
 	background: url() no-repeat;
 	background-color: rgb(60,60,60);
 	background-size: 100%;
+	margin-top: 39px;
 	padding-right: 16px;
 	width: 100%;
 	max-width: 1920px;
 	min-width: 420px;
-	height: 600px;
+	height: 650px;
 	margin-left: -8px;
-	margin-top: -8px;
 	text-align: center;
+}
+
+.mainText {
+	margin-top: 20%;
 }
 
 .topNav {
@@ -57,14 +60,15 @@ div {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 34px;
+	height: 39px;
+	opacity: 0.9;
 }
 
 .topNav a{
 	float: left;
 	display: block;
 	font-size: 20px;
-	padding: 5px 20px;
+	padding: 10px 20px;
 	color: rgb(255,255,255);
 	text-decoration: none;
 	text-align: center;
@@ -77,26 +81,29 @@ div {
 .topNav a:hover, a:active {
 	background-color: rgb(80,80,80);
 	text-decoration: underline;
+	opacity: 1;
 }
 
 .topNav .openButton {
 	display: none;
 	background-color: rgb(1,1,1);
-	height: 25px;
+	height: 20px;
 }
 
 @media screen and (max-width: 600px) {
-	.topNav a:not(:first-child) {display: none;}
+	.topNav {
+		height: 39px;
+	}
+	.topNav a:not(:first-child) {
+		display: none;
+	}
 	.topNav a.openButton {
 		float: right;
 		display: block;
 	}
-}
-
-@media screen and (max-width: 600px) {
 	.topNav.responsive {
 		position: fixed;
-		height: 150px;
+		height: 39px;
 	}
 	.topNav.responsive .openButton {
 		position: fixed;
