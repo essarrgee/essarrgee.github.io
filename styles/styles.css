@@ -45,7 +45,7 @@ div {
 }
 
 .mainText {
-	margin-top: 22%;
+	margin-top: 18%;
 	font-size: 40px;
 }
 
@@ -63,7 +63,7 @@ div {
 .topNav a{
 	float: left;
 	display: block;
-	font-size: 20px;
+	font-size: 18px;
 	padding: 10px 20px;
 	color: rgb(255,255,255);
 	text-decoration: none;

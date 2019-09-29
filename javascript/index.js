@@ -8,12 +8,12 @@ function expand() {
 		frame = 40;
 		function expandTopNav() {
 			if (topNav && frame) {
-				if (frame == 180 || frame == 39) {
+				if (frame >= 180 || frame == 39) {
 					clearInterval(interval);
 					frame = 40;
 				}
 				else {
-					frame++;
+					frame += 5;
 					topNav.style.height = frame + 'px';
 				}
 			}
@@ -23,6 +23,29 @@ function expand() {
 		frame = 39;
 		topNav.className = "topNav";
 		topNav.style.height = frame + 'px';
+	}
+}
+
+function randomMainText() {
+	var mainText = document.getElementById("mainText");
+	var random = Math.floor(Math.random()*10);
+	if (mainText) {
+		mainText.innerHTML = "console.log('Hello!');";
+		if (random == 1 || random == 6) {
+			mainText.innerHTML = "print('Hello!')";
+		}
+		else if (random == 2 || random == 7) {
+			mainText.innerHTML = 'printf("Hello!");';
+		}
+		else if (random == 3 || random == 8) {
+			mainText.innerHTML = "print('Hello!');";
+		}
+		else if (random == 4 || random == 9) {
+			mainText.innerHTML = 'System.out.println("Hello!");';
+		}
+		else if (random == 5 || random == 10) {
+			mainText.innerHTML = 'Console.WriteLine("Hello!");';
+		}
 	}
 }
 
