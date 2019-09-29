@@ -49,6 +49,12 @@ div {
 	font-size: 40px;
 }
 
+.nonMainText {
+	margin-top: 8%;
+	margin-bottom: 0;
+	font-size: 40px;
+}
+
 .topNav {
 	background-color: rgb(120,120,120);
 	position: fixed;
@@ -92,6 +98,11 @@ div {
 	}
 	.mainText {
 		margin-top: 30%;
+		font-size: 30px;
+	}
+	.nonMainText {
+		margin-top: 15%;
+		margin-bottom: -5%;
 		font-size: 30px;
 	}
 	.topNav a:not(:first-child) {
