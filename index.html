@@ -7,10 +7,10 @@
 		<script async src="./javascript/index.js"></script>
 		<title>essarrgee</title>
 	</head>
-	<body>
+	<body onresize="resizeTopNav()">
 		<header>
 			<div class="topNav" id="topNav">
-				<a href="index.html">HOME</a>
+				<a href="index.html">essarrgee</a>
 				<a href="games">GAMES</a>
 				<a href="about">ABOUT</a>
 				<a href="contact">CONTACT</a>
@@ -18,7 +18,8 @@
 			</div>
 		</header>
 		<div class="mainIndex">
-			<h1 class="mainText">console.log("Hello!");</h1>
+			<h1 class="mainText" id="mainText">console.log("Hello!");</h1>
+			<script>randomMainText();</script>
 			<p> Welcome to my developer portfolio!</p>
 			<p>
 				I'm a game developer who loves working on 

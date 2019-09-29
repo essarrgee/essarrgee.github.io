@@ -26,6 +26,19 @@ function expand() {
 	}
 }
 
+function resizeTopNav() {
+	var topNav = document.getElementById("topNav");
+	if (topNav && topNav.className != "topNav") {
+		if (window.innerWidth >= 600) {
+			frame = 39;
+		}
+		else if (window.innerWidth < 600) {
+			frame = 180;
+		}
+		topNav.style.height = frame + 'px';
+	}
+}
+
 function randomMainText() {
 	var mainText = document.getElementById("mainText");
 	var random = Math.floor(Math.random()*10);

@@ -94,9 +94,6 @@ div {
 		margin-top: 30%;
 		font-size: 30px;
 	}
-	.topNav {
-		height: 39px;
-	}
 	.topNav a:not(:first-child) {
 		display: none;
 	}
@@ -106,7 +103,6 @@ div {
 	}
 	.topNav.responsive {
 		position: fixed;
-		height: 39px;
 	}
 	.topNav.responsive .openButton {
 		position: fixed;
