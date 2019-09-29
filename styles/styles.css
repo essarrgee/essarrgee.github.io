@@ -50,7 +50,7 @@ div {
 }
 
 .nonMainText {
-	margin-top: 8%;
+	margin-top: 60px;
 	margin-bottom: 0;
 	font-size: 40px;
 }
@@ -101,9 +101,9 @@ div {
 		font-size: 30px;
 	}
 	.nonMainText {
-		margin-top: 15%;
-		margin-bottom: -5%;
-		font-size: 30px;
+		margin-top: 70px;
+		margin-bottom: -30px;
+		font-size: 45px;
 	}
 	.topNav a:not(:first-child) {
 		display: none;
