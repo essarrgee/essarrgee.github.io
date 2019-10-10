@@ -68,7 +68,7 @@ div {
 	background-color: rgb(60,60,60);
 	margin: 10px 5px 5px 7px;
 	max-width: 49%;
-	height: 190px;
+	height: 195px;
 	float: left;
 	display: block;
 }
@@ -180,6 +180,7 @@ div {
 	.gameSection {
 		margin: 10px 0px 0px 0px;
 		max-width: 100%;
+		height: auto;
 	}
 }
 
