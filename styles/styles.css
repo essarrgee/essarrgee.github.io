@@ -25,6 +25,7 @@ p {
 
 iframe {
 	margin-top: 10px;
+	width: 100%;
 }
 
 div {
@@ -54,7 +55,7 @@ div {
 }
 
 .nonMainText {
-	margin: 60px 0 10px 0;
+	margin: 50px 0 15px 0;
 	font-size: 40px;
 }
 
@@ -65,8 +66,9 @@ div {
 
 .gameSection {
 	background-color: rgb(60,60,60);
-	margin: 10px 5px 0 7px;
+	margin: 10px 5px 5px 7px;
 	max-width: 49%;
+	height: 190px;
 	float: left;
 	display: block;
 }
@@ -86,13 +88,13 @@ div {
 
 .gameLink h2{
 	text-align: left;
-	margin: 10px 20% 15px 0.5%;
+	margin: 10px 20% 8px 0.5%;
 	float: left;
 }
 
 .gameLink p{
 	text-align: left;
-	margin: 0 0 15px 1%;
+	margin: 0 0 8px 1%;
 	font-size: 14px;
 	float: left;
 	width: 64%;
@@ -100,16 +102,41 @@ div {
 
 .gamePageSection {
 	background-color: rgb(60,60,60);
-	margin: 20px 0 20px 0;
+	margin: 0 0.25% 5px 0.25%;
+	width: 49.5%;
+	min-height: 200px;
+	float: left;
+}
+
+.gamePageImageGallery {
+	background-color: rgb(60,60,60);
+	margin: 0 0 5px 0;
+	float: left;
+}
+
+.gamePageImageGallery img{
+	margin: 5px 0.5% 10px 0.5%;
+	width: 24%;
 	float: left;
 }
 
 .gamePageSection h2{
-	margin: 10px 0 10px 0;
+	margin: 20px 0 10px 0;
 }
 
 .gamePageSection p{
-	margin: 10px 20px 15px 20px;
+	margin: 15px 20px 30px 20px;
+	font-size: 14px;
+	text-align: left;
+}
+
+.gamePageSection a{
+	margin: 0 0 5px 0;
+	display: block;
+	font-size: 14px;
+	text-align: left;
+	text-decoration: none;
+	color: rgb(0,100,255);
 }
 
 .topNav {
@@ -160,17 +187,30 @@ div {
 	iframe {
 		height: 0;
 	}
+	.gamePageSection {
+		margin: 10px 0.25% 5px 0.25%;
+		width: 100%;
+		min-height: 0;
+	}
+	.gamePageImageGallery {
+		margin: 10px 0 5px 0;
+	}
+	.gamePageImageGallery img{
+		margin: 5px 0.5% 5px 0.5%;
+		width: 50%;
+		float: none;
+	}
 	.subHeading {
 		margin: 40px 10% 20px 10%;
 		text-align: center;
 	}
 	.mainText {
 		margin-top: 30%;
-		font-size: 30px;
+		font-size: 25px;
 	}
 	.nonMainText {
-		margin-top: 70px;
-		margin-bottom: -10px;
+		margin-top: 50px;
+		margin-bottom: 10px;
 		font-size: 45px;
 		text-align: center;
 	}
