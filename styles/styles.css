@@ -54,8 +54,7 @@ div {
 }
 
 .nonMainText {
-	margin-top: 60px;
-	margin-bottom: 0;
+	margin: 60px 0 10px 0;
 	font-size: 40px;
 }
 
@@ -66,7 +65,7 @@ div {
 
 .gameSection {
 	background-color: rgb(60,60,60);
-	margin: 10px 5px 0px 7px;
+	margin: 10px 5px 0 7px;
 	max-width: 49%;
 	float: left;
 	display: block;
@@ -87,7 +86,7 @@ div {
 
 .gameLink h2{
 	text-align: left;
-	margin: 10px 25% 15px 0.5%;
+	margin: 10px 20% 15px 0.5%;
 	float: left;
 }
 
@@ -96,7 +95,21 @@ div {
 	margin: 0 0 15px 1%;
 	font-size: 14px;
 	float: left;
-	width: 69%;
+	width: 64%;
+}
+
+.gamePageSection {
+	background-color: rgb(60,60,60);
+	margin: 20px 0 20px 0;
+	float: left;
+}
+
+.gamePageSection h2{
+	margin: 10px 0 10px 0;
+}
+
+.gamePageSection p{
+	margin: 10px 20px 15px 20px;
 }
 
 .topNav {
@@ -157,7 +170,7 @@ div {
 	}
 	.nonMainText {
 		margin-top: 70px;
-		margin-bottom: -30px;
+		margin-bottom: -10px;
 		font-size: 45px;
 		text-align: center;
 	}
@@ -180,5 +193,22 @@ div {
 		float: none;
 		display: block;
 		text-align: left;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.gameLink h2{
+		text-align: left;
+		margin: 10px 0 15px 0.5%;
+		float: left;
+		width: 60%;
+	}
+
+	.gameLink p{
+		text-align: left;
+		margin: 0 0 15px 1%;
+		font-size: 14px;
+		float: left;
+		width: 60%;
 	}
 }
