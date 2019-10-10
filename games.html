@@ -4,25 +4,44 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script async src="./javascript/index.js"></script>
+		<script async src="./javascript/loadhtml.js"></script>
 		<title>essarrgee</title>
 	</head>
 	<body onresize="resizeTopNav()">
 		<header>
 			<div class="topNav" id="topNav">
-				<a href="index.html">essarrgee</a>
-				<a href="games.html">GAMES</a>
-				<a href="about.html">ABOUT</a>
-				<a href="contact.html">CONTACT</a>
-				<a href="javascript:void(0);" class="openButton" onClick="expand()"></a>
 			</div>
 		</header>
 		<div>
 			<h1 class="nonMainText">Games</h1>
-			<p>Check out all the games I've worked on!</p>
+			<p class="subHeading">Game projects I've worked on all go here!</p>
 		</div>
 		<div>
-			<h1></h1>
+			<div class="gameSection" id="ONEPIX">
+				<a class="gameLink" href="games/onepix.html">
+					<img src="images/onepix_icon.png" alt="Icon">
+					<h2>ONE-PIX</h2>
+					<p>A game made under 72 hours for Ludum Dare 45.
+						<br><br>
+						The evil Pengu army has invaded the world and turned 
+						you into a pixel! You must venture forth, 
+						reclaim your lost pixels, and kick those Pengu out!
+					</p>
+				</a>
+			</div>
+			<div class="gameSection" id="DodgeBlocks">
+				<a class="gameLink" href="games/dodgeblocks.html">
+					<img src="images/dodgeblocks_icon.png" alt="Icon">
+					<h2>Dodge the Blocks!</h2>
+					<p>A game made under 2 hours to practice for Ludum Dare 45.
+						<br><br>
+						Dodge incoming blocks to increase your score! 
+						How long will you survive?
+					</p>
+				</a>
+			</div>
 		</div>
 	</body>
 </html>

@@ -50,9 +50,49 @@ div {
 }
 
 .nonMainText {
-	margin-top: 8%;
+	margin-top: 60px;
 	margin-bottom: 0;
 	font-size: 40px;
+}
+
+.subHeading {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.gameSection {
+	background-color: rgb(60,60,60);
+	margin: 10px 5px 0px 7px;
+	max-width: 49%;
+	float: left;
+	display: block;
+}
+
+.gameLink {
+	height: 100%;
+	width: 100%;
+	color: rgb(255,255,255);
+	text-decoration: none;
+}
+
+.gameLink img{
+	margin: 10px;
+	width: 25%;
+	float: left;
+}
+
+.gameLink h2{
+	text-align: left;
+	margin: 10px 25% 15px 0.5%;
+	float: left;
+}
+
+.gameLink p{
+	text-align: left;
+	margin: 0 0 15px 1%;
+	font-size: 14px;
+	float: left;
+	width: 69%;
 }
 
 .topNav {
@@ -92,18 +132,27 @@ div {
 	height: 20px;
 }
 
+@media screen and (max-width: 1214px) {
+	.gameSection {
+		margin: 10px 0px 0px 0px;
+		max-width: 100%;
+	}
+}
+
 @media screen and (max-width: 600px) {
-	p {
-		margin: 60px 10% 0 10%;
+	.subHeading {
+		margin: 40px 10% 20px 10%;
+		text-align: center;
 	}
 	.mainText {
 		margin-top: 30%;
 		font-size: 30px;
 	}
 	.nonMainText {
-		margin-top: 15%;
-		margin-bottom: -5%;
-		font-size: 30px;
+		margin-top: 70px;
+		margin-bottom: -30px;
+		font-size: 45px;
+		text-align: center;
 	}
 	.topNav a:not(:first-child) {
 		display: none;
