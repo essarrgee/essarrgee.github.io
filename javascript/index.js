@@ -1,5 +1,28 @@
 var frame = 39;
 
+function randomMainText() {
+	var mainText = document.getElementById("mainText");
+	var random = Math.floor(Math.random()*10);
+	if (mainText) {
+		mainText.innerHTML = "console.log('Hello!');";
+		if (random == 1 || random == 6) {
+			mainText.innerHTML = "print('Hello!')";
+		}
+		else if (random == 2 || random == 7) {
+			mainText.innerHTML = 'printf("Hello!");';
+		}
+		else if (random == 3 || random == 8) {
+			mainText.innerHTML = "print('Hello!');";
+		}
+		else if (random == 4 || random == 9) {
+			mainText.innerHTML = 'System.out.println("Hello!");';
+		}
+		else if (random == 5 || random == 10) {
+			mainText.innerHTML = 'Console.WriteLine("Hello!");';
+		}
+	}
+}
+
 function expand() {
 	var topNav = document.getElementById("topNav");
 	if (topNav.className == "topNav") {
@@ -36,29 +59,6 @@ function resizeTopNav() {
 			frame = 180;
 		}
 		topNav.style.height = frame + 'px';
-	}
-}
-
-function randomMainText() {
-	var mainText = document.getElementById("mainText");
-	var random = Math.floor(Math.random()*10);
-	if (mainText) {
-		mainText.innerHTML = "console.log('Hello!');";
-		if (random == 1 || random == 6) {
-			mainText.innerHTML = "print('Hello!')";
-		}
-		else if (random == 2 || random == 7) {
-			mainText.innerHTML = 'printf("Hello!");';
-		}
-		else if (random == 3 || random == 8) {
-			mainText.innerHTML = "print('Hello!');";
-		}
-		else if (random == 4 || random == 9) {
-			mainText.innerHTML = 'System.out.println("Hello!");';
-		}
-		else if (random == 5 || random == 10) {
-			mainText.innerHTML = 'Console.WriteLine("Hello!");';
-		}
 	}
 }
 
