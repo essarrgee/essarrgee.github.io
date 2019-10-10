@@ -23,6 +23,10 @@ p {
 	font-size: 16px;
 }
 
+iframe {
+	margin-top: 10px;
+}
+
 div {
 	background: url() no-repeat;
 	background-size: 100%;
@@ -140,6 +144,9 @@ div {
 }
 
 @media screen and (max-width: 600px) {
+	iframe {
+		height: 0;
+	}
 	.subHeading {
 		margin: 40px 10% 20px 10%;
 		text-align: center;
