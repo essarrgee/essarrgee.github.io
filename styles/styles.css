@@ -55,7 +55,7 @@ div {
 .indexButton {
 	background-color: rgb(10,190,90);
 	color: rgb(255,255,255);
-	padding: 20px 60px;
+	padding: 15px 60px;
 	margin: 20px;
 	text-decoration: none;
 	text-align: center;
@@ -66,10 +66,14 @@ div {
 
 .indexButton:hover {
 	background-color: rgb(70,250,150);
+	padding: 13px 58px;
+	margin: 22px;
 }
 
 .indexButton:active {
 	background-color: rgb(0,180,80);
+	padding: 16px 61px;
+	margin: 19px;
 }
 
 .mainIndex {
