@@ -71,6 +71,10 @@ div {
 	border-radius: 30px;
 }
 
+.mainIndex p {
+	font-size: 30px;
+}
+
 .mainText {
 	margin-top: 18%;
 	font-size: 50px;
@@ -87,7 +91,7 @@ div {
 }
 
 .subIndex p:first-child{
-	margin-top: 18%;
+	margin-top: 15%;
 	font-weight: bold;
 }
 
@@ -254,8 +258,8 @@ div {
 	
 	.indexButton {
 		margin: 7% 10% 5% 10%;
-		padding-top: 3%;
-		padding-bottom: 3%;
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
 		display: block;
 	}
 	
@@ -265,8 +269,9 @@ div {
 	}
 	
 	.subIndex p:first-child{
-		margin-top: 30%;
+		margin-top: 25%;
 		font-weight: bold;
+		font-size: 22px;
 	}
 	
 	.gamePageSection {
@@ -290,9 +295,15 @@ div {
 		text-align: center;
 	}
 	
+	.mainIndex p {
+		margin-top: 25%;
+		margin-bottom: 25%;
+		font-size: 20px;
+	}
+	
 	.mainText {
 		margin-top: 50%;
-		margin-bottom: 47%;
+		margin-bottom: 20%;
 		font-size: 25px;
 	}
 	
