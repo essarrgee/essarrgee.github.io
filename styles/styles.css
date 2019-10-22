@@ -68,7 +68,8 @@ div {
 .mainIndex {
 	background: url() no-repeat;
 	background-color: rgb(60,60,60);
-	height: 650px;
+	height: 640px;
+	border-radius: 30px;
 }
 
 .mainText {
@@ -107,6 +108,7 @@ div {
 	height: 195px;
 	float: left;
 	display: block;
+	border-radius: 5px;
 }
 
 .gameSection:hover {
@@ -128,6 +130,7 @@ div {
 	margin: 10px;
 	width: 25%;
 	float: left;
+	border-radius: 5px;
 }
 
 .gameLink h2{
@@ -151,18 +154,22 @@ div {
 	height: 195px;
 	float: left;
 	display: block;
+	border-radius: 5px;
 }
 
 .gamePageImageGallery {
 	background-color: rgb(60,60,60);
 	margin: 10px 0 5px 0;
+	padding-bottom: 5px;
 	float: left;
+	border-radius: 5px;
 }
 
 .gamePageImageGallery img{
 	margin: 5px 0.5% 10px 0.5%;
-	width: 24%;
-	float: left;
+	width: 23%;
+	border-radius: 5px;
+	display: inline-block;
 }
 
 .gamePageSection h2{
@@ -193,6 +200,7 @@ div {
 	width: 100%;
 	height: 39px;
 	opacity: 0.9;
+	border-radius: 5px;
 }
 
 .topNav a{
@@ -240,12 +248,12 @@ div {
 	}
 	
 	.indexButton {
-		margin: 7%;
+		margin: 10%;
 		display: block;
 	}
 	
 	.subIndex p {
-		margin-bottom: 5%;
+		margin-bottom: 4%;
 	}
 	
 	.gamePageSection {
