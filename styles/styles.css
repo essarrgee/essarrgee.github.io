@@ -93,6 +93,7 @@ div {
 .subIndex p:first-child{
 	margin-top: 15%;
 	font-weight: bold;
+	font-size: 25px;
 }
 
 .subIndex p{
