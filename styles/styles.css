@@ -250,6 +250,11 @@ div {
 		max-width: 100%;
 		height: auto;
 	}
+	.gamePageSection {
+		margin: 10px 0.25% 5px 0.25%;
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -278,7 +283,7 @@ div {
 	.gamePageSection {
 		margin: 10px 0.25% 5px 0.25%;
 		width: 100%;
-		min-height: 0;
+		height: auto;
 	}
 	
 	.gamePageImageGallery {
