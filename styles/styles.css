@@ -4,6 +4,10 @@
 	font-family: Rubik;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -207,6 +211,24 @@ div {
 	color: rgb(0,220,255);
 }
 
+.contactSection {
+	background-color: rgb(60,60,60);
+	margin: 10px 5px 5px 7px;
+	max-width: 32.3%;
+	height: 120px;
+	float: left;
+	display: block;
+	border-radius: 5px;
+}
+
+.contactSection:hover {
+	background-color: rgb(100,100,100);
+}
+
+.contactSection:active {
+	background-color: rgb(50,50,50);
+}
+
 .topNav {
 	background-color: rgb(100,100,100);
 	position: fixed;
@@ -254,7 +276,25 @@ div {
 		max-width: 100%;
 		height: auto;
 	}
+	
 	.gamePageSection {
+		margin: 10px 0.25% 5px 0.25%;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1176px) {	
+	.contactSection {
+		margin: 5px 0.25% 5px 0.25%;
+		width: 100%;
+		
+		display: inline-text;
+	}
+}
+
+@media screen and (max-width: 900px) {	
+	.contactSection {
 		margin: 10px 0.25% 5px 0.25%;
 		max-width: 100%;
 		height: auto;
@@ -308,7 +348,7 @@ div {
 	.mainIndex p {
 		margin-top: 25%;
 		margin-bottom: 25%;
-		font-size: 20px;
+		font-size: 18px;
 	}
 	
 	.mainText {
