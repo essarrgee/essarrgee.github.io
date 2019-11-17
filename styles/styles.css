@@ -4,6 +4,18 @@
 	font-family: Rubik;
 }
 
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(70,250,150);
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: rgb(0,180,80);
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -38,14 +50,6 @@ div {
 	height: 100%;
 	overflow: hidden;
 	text-align: center;
-}
-
-::-webkit-scrollbar {
-	width: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: rgb(0,0,0);
 }
 
 .openButton {
