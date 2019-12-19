@@ -74,6 +74,7 @@ div {
 	border-radius: 20px;
 	display: inline-block;
 	font-size: 20px;
+	box-shadow: 0px 5px 0px 0px rgb(30 90 30);
 }
 
 .indexButton:hover {
@@ -111,7 +112,7 @@ div {
 }
 
 .subIndex {
-	height: 650px;
+	height: 900px;
 }
 
 .subIndex p:first-child{
@@ -137,14 +138,17 @@ div {
 	float: left;
 	display: block;
 	border-radius: 5px;
+	box-shadow: 0px 5px 0px 0px rgb(40 40 40);
 }
 
 .gameSection:hover {
 	background-color: rgb(100,100,100);
+	box-shadow: 0px 5px 0px 0px rgb(80 80 80);
 }
 
 .gameSection:active {
 	background-color: rgb(50,50,50);
+	box-shadow: 0px 5px 0px 0px rgb(40 40 40);
 }
 
 .gameLink {
@@ -157,6 +161,7 @@ div {
 .gameLink img{
 	margin: 10px;
 	width: 25%;
+	max-height: 90%;
 	float: left;
 	border-radius: 5px;
 }
@@ -227,14 +232,17 @@ div {
 	float: left;
 	display: block;
 	border-radius: 5px;
+	box-shadow: 0px 5px 0px 0px rgb(40 40 40);
 }
 
 .contactSection:hover {
 	background-color: rgb(100,100,100);
+	box-shadow: 0px 5px 0px 0px rgb(80 80 80);
 }
 
 .contactSection:active {
 	background-color: rgb(50,50,50);
+	box-shadow: 0px 5px 0px 0px rgb(40 40 40);
 }
 
 .topNav {
@@ -282,6 +290,7 @@ div {
 	.gameSection {
 		margin: 10px 0px 0px 0px;
 		max-width: 100%;
+		width: 100%;
 		height: auto;
 	}
 	
@@ -309,12 +318,26 @@ div {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 	iframe {
 		height: 0;
 	}
 	
 	.indexButton {
+		margin: 7% 10% 5% 10%;
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
+		display: block;
+	}
+	
+	.indexButton:hover {
+		margin: 7% 10% 5% 10%;
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
+		display: block;
+	}
+	
+	.indexButton:active {
 		margin: 7% 10% 5% 10%;
 		padding-top: 2.5%;
 		padding-bottom: 2.5%;
@@ -354,13 +377,13 @@ div {
 	}
 	
 	.mainIndex p {
-		margin-top: 25%;
-		margin-bottom: 25%;
+		margin-top: 20%;
+		margin-bottom: 5%;
 		font-size: 18px;
 	}
 	
 	.mainText {
-		margin-top: 50%;
+		margin-top: 40%;
 		margin-bottom: 20%;
 		font-size: 25px;
 	}
@@ -371,8 +394,7 @@ div {
 	}
 	
 	.nonMainText {
-		margin-top: 50px;
-		margin-bottom: 10px;
+		margin: 50px 0 -20px 0;
 		font-size: 45px;
 		text-align: center;
 	}
