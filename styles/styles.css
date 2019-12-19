@@ -377,26 +377,29 @@ div {
 	}
 	
 	.mainIndex p {
-		margin-top: 20%;
+		margin-top: 150px;
 		margin-bottom: 5%;
 		font-size: 18px;
 	}
 	
 	.mainText {
-		margin-top: 40%;
-		margin-bottom: 20%;
+		margin-top: 250px;
+		margin-bottom: 175px;
 		font-size: 25px;
 	}
 	
 	.mainText p {
-		margin-top: 30%;
 		font-size: 16px;
 	}
 	
 	.nonMainText {
-		margin: 50px 0 -20px 0;
+		margin: 50px 0 15px 0;
 		font-size: 45px;
 		text-align: center;
+	}
+	
+	.subHeading {
+		margin-top: 5px;	
 	}
 	
 	.topNav a:not(:first-child) {
