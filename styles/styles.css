@@ -224,6 +224,23 @@ div {
 	color: rgb(0,220,255);
 }
 
+.gamePageSection .listLink{
+	margin: 0 0 5px 0;
+	display: block;
+	font-size: 14px;
+	text-align: left;
+	text-decoration: none;
+	color: rgb(0,220,255);
+}
+
+.gamePageSection .listStatus{
+	margin: 0 0 5px 0;
+	display: block;
+	font-size: 14px;
+	text-align: left;
+	text-decoration: none;
+}
+
 .contactSection {
 	background-color: rgb(60,60,60);
 	margin: 10px 5px 5px 7px;
