@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/tictactoe.js"></script>
+		<script src="javascript/tictactoe.js"></script>
+		<title>essarrgee/Tic-Tac-Toe</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">Tic-Tac-Toe</h1>
+			<div class="gamePageGameFrame">
+				<div class="tictactoe-container">
+					<div class="tictactoe-info">
+						<p class="tictactoe-gameinfo">
+							Tic-Tac-Toe
+						</p>
+						<br>
+						<p class="tictactoe-gameinfo" id="currentPlayerTracker">
+							Current Player: None
+						</p>
+						<p class="tictactoe-gameinfo" id="currentTurnCounter">
+							Turns: 0
+						</p>
+						<br>
+						<a href="javascript:void(0);" class="tictactoe-startbutton" id="startButton" onClick="startNewGame()">
+							Click to Start!
+						</a>
+					</div>
+					<a href="javascript:void(0);" class="tictactoe-item" id="cell0" onClick="clickCell(0)">
+						
+					</a>
+					<a href="javascript:void(0);" class="tictactoe-item" id="cell1" onClick="clickCell(1)">
+						
+					</a>
+					<a href="javascript:void(0);" class="tictactoe-item" id="cell2" onClick="clickCell(2)">
+						
+					</a>
+					<a href="javascript:void(0);" class="tictactoe-item" id="cell3" onClick="clickCell(3)">
+						
+					</a>
+					<a href="javascript:void(0);" class="tictactoe-item" id="cell4" onClick="clickCell(4)">
+						
+					</a>
+					<a href="javascript:void(0);" class="tictactoe-item" id="cell5" onClick="clickCell(5)">
+						
+					</a>
+					<a href="javascript:void(0);" class="tictactoe-item" id="cell6" onClick="clickCell(6)">
+						
+					</a>
+					<a href="javascript:void(0);" class="tictactoe-item" id="cell7" onClick="clickCell(7)">
+						
+					</a>
+					<a href="javascript:void(0);" class="tictactoe-item" id="cell8" onClick="clickCell(8)">
+						
+					</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h1></h1>
+		</div>
+	</body>
+</html>
