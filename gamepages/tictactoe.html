@@ -4,9 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/tictactoe_styles.css" />
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="/javascript/index.js"></script>
 		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/tictactoe.js"></script>
 		<title>essarrgee/Tic-Tac-Toe</title>
 	</head>
 	<body onresize="resizeTopNav()">
@@ -16,24 +18,7 @@
 		</header>
 		<div>
 			<h1 class="nonMainText">Tic-Tac-Toe</h1>
-			<div class="gamePageGameFrame">
-				<div class="tictactoe-container">
-					<div class="tictactoe-info">Tic-Tac-Toe</div>
-					<div class="tictactoe-item" id="cell1">&times;</div>
-					<div class="tictactoe-item" id="cell2"></div>
-					<div class="tictactoe-item" id="cell3"></div>
-					<div class="tictactoe-item" id="cell4"> </div>
-					<div class="tictactoe-item" id="cell5"> </div>
-					<div class="tictactoe-item" id="cell6"> </div>
-					<div class="tictactoe-item" id="cell7"> </div>
-					<div class="tictactoe-item" id="cell8"> </div>
-					<div class="tictactoe-item" id="cell9"> </div>
-				</div>
-			</div>
-			<div class="gamePageImageGallery">
-				<h2>Image Gallery</h2>
-				
-			</div>
+			<div class="gamePageGameFrame" id="tictactoeGame"></div>
 			<div class="gamePageSection">
 				<h2>Game Description</h2>
 				<p>Press SPACE to jump! 
