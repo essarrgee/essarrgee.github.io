@@ -7,6 +7,7 @@
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="/javascript/index.js"></script>
 		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
 		<title>essarrgee/Blossom_Blast</title>
 	</head>
 	<body onresize="resizeTopNav()">
@@ -63,8 +64,12 @@
 				</ul>
 			</div>
 		</div>
-		<div>
-			<h1></h1>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
 		</div>
 	</body>
 </html>
