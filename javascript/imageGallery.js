@@ -22,14 +22,16 @@ function openEntryModal(imageButton) {
 		imageModalImage.src = imageButton.src;
 		overlay.style.opacity = 0.9;
 		overlay.style["pointer-events"] = "auto";
-		imageModal.style.transform = "translate(-50%, -50%)";
+		//imageModal.style.transform = "translateY(-150%)";
+		imageModal.style.top = "60%";
 	}
 }
 
 function closeEntryModal() {
 	if (imageModal) {
-		imageModal.style.transform = "translate(-50%, -300%)";
+		//imageModal.style.transform = "translateY(-500%)";
 		overlay.style["pointer-events"] = "none";
 		overlay.style.opacity = 0;
+		imageModal.style.top = "-500%";
 	}
 }
