@@ -56,6 +56,10 @@ div {
 	text-align: center;
 }
 
+a, button {
+	transition: background-color, 0.3s;
+}
+
 .openButton {
 	background-color: rgb(100,100,100);
 }
@@ -83,8 +87,6 @@ div {
 
 .indexButton:hover {
 	background-color: rgb(70,250,150);
-	padding: 13px 58px;
-	margin: 22px;
 }
 
 .indexButton:active {
