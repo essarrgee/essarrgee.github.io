@@ -281,6 +281,7 @@ a, button {
 	height: 39px;
 	opacity: 0.9;
 	border-radius: 5px;
+	z-index: 100;
 }
 
 .topNav a{
@@ -460,7 +461,7 @@ a, button {
 	
 	.mainText {
 		margin-top: 250px;
-		margin-bottom: 165px;
+		margin-bottom: 130px;
 		font-size: 25px;
 	}
 	

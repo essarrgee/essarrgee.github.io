@@ -122,12 +122,22 @@ body {
 	height: 65%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+	.carousel-text {
+		top: -122%;
+	}
+
 	.carousel-projecttitle {
+		top: -95%;
 		font-size: 60px;
 	}
 	
+	.carousel-container {
+		top: -130%;
+	}
+	
 	.carousel-visit-button {
+		top: -80%;
 		height: 100px;
 	}
 	
@@ -151,25 +161,27 @@ body {
 	
 	.carousel-text {
 		padding-left: 10px;
-		background-color: rgba(150,150,150, 0.1);
+		background-color: rgba(150,150,150, 0.3);
 		box-shadow: 0px 2px 3px rgba(0,0,0, 0.6);
 		width: auto;
-		top: -100%;
+		top: -102%;
 		left: 5%;
 		-webkit-text-stroke: 0.75px black;
-		font-size: 35px;
+		font-size: 28px;
+		text-shadow: 0px 0px 3px rgb(0,0,0);
 	}
 	
 	.carousel-container {
-		top: -103%;
+		top: -107%;
 	}
 	
 	.carousel-projecttitle {
 		font-size: 50px;
+		top: -100%;
 	}
 	
 	.carousel-visit-button {
-		top: -45%;
+		top: -60%;
 	}
 }
 
@@ -178,10 +190,6 @@ body {
 		width: 150%;
 		top: -2.5%;
 		left: -25%;
-	}
-	
-	.carousel-visit-button {
-		top: -48%;
 	}
 }
 
