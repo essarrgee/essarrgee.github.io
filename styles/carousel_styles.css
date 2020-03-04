@@ -124,7 +124,7 @@ body {
 
 @media screen and (max-width: 900px) {
 	.carousel-text {
-		top: -124%;
+		top: -122%;
 		font-size: 30px;
 	}
 
@@ -134,11 +134,11 @@ body {
 	}
 	
 	.carousel-container {
-		top: -130%;
+		top: -127%;
 	}
 	
 	.carousel-visit-button {
-		top: -89%;
+		top: -84%;
 		height: 100px;
 		z-index: 2;
 	}
