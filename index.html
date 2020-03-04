@@ -19,33 +19,9 @@
 		<div class="mainIndex">
 			<h1 class="mainText" id="mainText">console.log("Hello!");</h1>
 			<p>Dev in progress.</p>
-			<a class="indexButton" href="#subIndex1">View_More();</a>
+			<a class="indexButton" href="#subIndex1">Read_More();</a>
 		</div>
-		<div class="carousel" id="subIndex1">
-			<div class="carousel-background-display">
-				<img id="carouselBG" src="images/bloom_screenshot1.png"></img>
-				<img class="carousel-hidden" id="carouselBG2" src=""></img>
-			</div>
-			<p class="carousel-text carousel-projecttitle" id="projectTitle">Bloom</p>
-			<div class="carousel-visit-button">
-				<a class="indexButton" href="gamepages/bloom" id="carouselViewButton">View_Project();</a>
-			</div>
-			<p class="carousel-text">More Projects</p>
-			<div class="carousel-container">
-				<div class="carousel-scroll">
-					<img stored_href="gamepages/bloom" class="carousel-item" id="Bloom" src="images/bloom_screenshot1.png" onClick="setCarouselBG(this)"></img>
-					<img stored_href="gamepages/seekquill" class="carousel-item" id="Seek Quill" src="images/seekquill_screenshot1.png" onClick="setCarouselBG(this)"></img>
-					<img stored_href="gamepages/onepix" class="carousel-item" id="ONE PIX" src="images/onepix_icon.png" onClick="setCarouselBG(this)"></img>
-					<img stored_href="gamepages/blossomblast" class="carousel-item" id="Blossom Blast" src="images/blossomblast_screenshot2.png" onClick="setCarouselBG(this)"></img>
-					<a href="projects" >
-						<div class="carousel-scroll-viewall">
-							View All
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="subIndex" id="subIndex2">
+		<div class="subIndex" id="subIndex1">
 			<p>Welcome to my developer portfolio!</p>
 			<p>I'm a software developer who loves working on projects,
 				especially games. I have mainly been using Unity
@@ -55,11 +31,30 @@
 			<p>You'll find an array of projects that I've worked on 
 				in the past, as well as upcoming works, here.
 			</p>
-			<a class="indexButton" href="projects">/Projects</a>
-			<!--
-			<a class="indexButton" href="about">/About</a>
-			-->
-			<a class="indexButton" href="contact">/Contact</a>
+			<a class="indexButton" href="#subIndex2">View_More();</a>
+		</div>
+		<div class="carousel" id="subIndex2">
+			<div class="carousel-background-display">
+				<img id="carouselBG" src="images/bloom_screenshot3.png"></img>
+				<img class="carousel-hidden" id="carouselBG2" src=""></img>
+			</div>
+			<p class="carousel-text carousel-projecttitle" id="projectTitle">Bloom</p>
+			<div class="carousel-visit-button">
+				<a class="indexButton" href="gamepages/bloom" id="carouselViewButton">View_Project();</a>
+			</div>
+			<p class="carousel-text">More Projects</p>
+			<div class="carousel-container">
+				<div class="carousel-scroll">
+					<img stored_href="gamepages/bloom" stored_img="images/bloom_screenshot3.png" class="carousel-item" id="Bloom" src="images/bloom_screenshot1.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/platformrpg" stored_img="images/prpg_screenshot2.gif" class="carousel-item" id="Platformer RPG" src="images/prpg_icon.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/seekquill" stored_img="images/seekquill_screenshot2.png" class="carousel-item" id="Seek Quill" src="images/seekquill_screenshot1.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/icetrial" stored_img="images/icetrial_screenshot4.gif" class="carousel-item" id="Ice Trial" src="images/icetrial_screenshot1.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="projectpages/icecreamshop" class="carousel-item" id="Ice Cream Shop" src="images/icecreamshop_screenshot1.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/oncedaily" stored_img="images/oncedaily_screenshot3.png" class="carousel-item" id="Once, Daily" src="images/oncedaily_icon.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/blossomblast" class="carousel-item" id="Blossom Blast" src="images/blossomblast_screenshot2.png" onClick="setCarouselBG(this)"></img>
+					<a href="projects"><div class="carousel-scroll-viewall">View All</div></a>
+				</div>
+			</div>
 		</div>
 		<script>randomMainText();</script>
 	</body>

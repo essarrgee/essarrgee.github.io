@@ -41,7 +41,7 @@ body {
 .carousel-text {
 	background-color: rgba(150,150,150, 0);
 	position: relative;
-	top: -105%;
+	top: -104%;
 	left: 2.5%;
 	width: 95%;
 	border-radius: 10px;
@@ -88,15 +88,15 @@ body {
 .carousel-scroll {
 	left: 0;
 	top: 0;
-	width: 1200px;
-	height: 100%;
+	width: 1750px;
+	height: 80%;
 	overflow: none;
 }
 
 .carousel-scroll a,
 .carousel-scroll img {
-	width: 190px;
-	height: 60%;
+	width: 150px;
+	height: 70%;
 	background-color: rgba(200,200,200,0.5);
 	border-radius: 10px;
 	margin: 1.5% 0px 0px 3%;
@@ -111,15 +111,15 @@ body {
 
 .carousel-scroll-viewall {
 	font-size: 25px;
-	text-shadow: 0px 0px 4px rgb(0,0,0);
+	text-shadow: 0px 0px 3px rgb(0,0,0);
 	color: rgba(255,255,255,0.9);
-	margin-top: 40px;
+	margin-top: 35px;
 }
 
 .carousel-scroll img:hover,
 .carousel-scroll a:hover {
-	width: 210px;
-	height: 65%;
+	width: 160px;
+	height: 75%;
 }
 
 @media screen and (max-width: 900px) {

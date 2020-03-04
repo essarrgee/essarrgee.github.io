@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
+		<title>essarrgee/Ice_Trial</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">Ice Trial</h1>
+			<iframe id="unityWebGL" frameborder="0" src="https://itch.io/embed-upload/1959922?color=333333" allowfullscreen="" width="980" height="585"></iframe>
+			<div class="gamePageImageGallery">
+				<h2>Image Gallery</h2>
+				<img src="../images/icetrial_screenshot1.png" alt="Screenshot">
+				<img src="../images/icetrial_screenshot2.gif" alt="Screenshot">
+				<img src="../images/icetrial_screenshot4.gif" alt="Screenshot">
+			</div>
+			<div class="gamePageSection">
+				<h2>Game Description</h2>
+				<p>To obtain the legendary Ice Orb, you must conquer the Ice Trial, 
+					located in the Ice Shrine! 
+					As a Pengu, defeat the guardians that protect the sacred orb!
+					<br><br>
+					Controls: WASD to Move, Spacebar to Slide, Mouse to aim, Left-Click to Interact/Attack, Scroll to Swap Weapons.
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>About</h2>
+				<p>A game made for itch.io's My First Game Jam Winter 2020 with teammate Branchi.
+					While this is certainly not our first game jam, we entered the
+					contest anyway to motivate ourselves to work on a new project.
+					The jam's theme was "Winter", so we decided on using a Penguin
+					as the main character.
+					<br><br>
+					Game made in Unity.
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://essarrgee.itch.io/ice-shrine-post-jam">Game Page (itch.io)</a></li>
+					<li><a href="https://gamejolt.com/games/icetrialdemo/469343">Game Page (GameJolt)</a></li>
+					<li><a href="https://itch.io/jam/my-first-game-jam-winter-2020/rate/565456">Game Jam Page</a></li>
+				</ul>
+			</div>
+			<div class="gamePageSection">
+				<h2>Stats</h2>
+				<ul>
+					<li><p class="listStatus">Status: Hiatus</p></li>
+					<li><p class="listStatus">Date Started: February 2, 2020</p></li>
+					<li><p class="listStatus">Date Completed (Demo): February 9, 2019</p></li>
+				</ul>
+			</div>
+		</div>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
+		</div>
+	</body>
+</html>
