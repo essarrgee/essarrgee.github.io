@@ -193,5 +193,10 @@ body {
 		top: -2.5%;
 		left: -25%;
 	}
+	
+	.carousel-projecttitle {
+		font-size: 40px;
+		top: -100%;
+	}
 }
 
