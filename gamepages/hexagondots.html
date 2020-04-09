@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
+		<title>essarrgee/Hexagon_Dots</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">Hexagon Dots</h1>
+			<iframe id="unityWebGL" frameborder="0" src="https://itch.io/embed-upload/1996169?color=333333" allowfullscreen="" width="960" height="670"></iframe>
+			<div class="gamePageSection">
+				<h2>Game Description</h2>
+				<p>
+				Check out a more completed version in the Links section! 
+				Includes a colorblind mode.
+				<br><br>
+				Based on the popular mobile game Dots, but with more degrees of freedom! 
+				Match each dot as long as they are next to each other!
+				<br><br>
+				Controls: Mouse click along the matching dots.
+				(Not compatible with mobile)
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>About</h2>
+				<p>
+				A short game project made in both Unity and Phaser 3, both within the same week.
+				Working on this project was one of my first experiences with the game engine
+				Phaser 3. Both versions were created with an object-oriented structure.
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://essarrgee.itch.io/hexadots">Game Page (itch.io)</a></li>
+					<li><a href="https://hexagondotsphaser.web.app/">Complete Version (Phaser 3/Firebase)</a></li>
+				</ul>
+			</div>
+			<div class="gamePageSection">
+				<h2>Stats</h2>
+				<ul>
+					<li><p class="listStatus">Status: Complete</p></li>
+					<li><p class="listStatus">Date Started: February 21, 2020</p></li>
+					<li><p class="listStatus">Date Completed: February 27, 2020</p></li>
+				</ul>
+			</div>
+		</div>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
+		</div>
+	</body>
+</html>
