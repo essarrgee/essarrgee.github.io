@@ -20,7 +20,7 @@ if (imageGallery && imageGallery[0]) {
 function openEntryModal(imageButton) {
 	if (imageModal) {
 		imageModalImage.src = imageButton.src;
-		overlay.style.opacity = 0.9;
+		overlay.style.opacity = 0.75;
 		overlay.style["pointer-events"] = "auto";
 		//imageModal.style.transform = "translateY(-150%)";
 		imageModal.style.top = "60%";
