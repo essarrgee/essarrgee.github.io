@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
+		<title>essarrgee/Eyeworm</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">Eyeworm</h1>
+			<div class="gamePageImageGallery">
+				<h2>Image Gallery</h2>
+				<img src="../images/eyeworm_screenshot1.gif" alt="Screenshot">
+				<img src="../images/eyeworm_screenshot2.png" alt="Screenshot">
+				<img src="../images/eyeworm_screenshot3.png" alt="Screenshot">
+				<img src="../images/eyeworm_screenshot4.png" alt="Screenshot">
+			</div>
+			<div class="gamePageSection">
+				<h2>Game Description</h2>
+				<p>
+					Help the Eyeworm improve its vision!
+					Collect "eyedrops" to allow the Eyeworm to "see"
+					and collect more letters in the map. 
+					Gather every letter to complete the vision
+					exam chart and unlock the exit!
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>About</h2>
+				<p>
+					A short game made under 24 hours for the RDC 2020 Game Jam. 
+					The theme for the jam was "2020 Vision". At first, I wanted
+					to create a horror game, hence the amount of darkness in the
+					game. Since I worked alone for this jam however, I decided
+					the initial ideas I had in mind were too ambitious and 
+					simplified them.
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://www.roblox.com/games/5379334962/Eyeworm-Exam">Game Page (Roblox)</a></li>
+				</ul>
+			</div>
+			<div class="gamePageSection">
+				<h2>Stats</h2>
+				<ul>
+					<li><p class="listStatus">Status: Complete</p></li>
+					<li><p class="listStatus">Date Started: July 18, 2020</p></li>
+					<li><p class="listStatus">Date Completed (Game Jam): July 19, 2020</p></li>
+				</ul>
+			</div>
+		</div>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
+		</div>
+	</body>
+</html>
