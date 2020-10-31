@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
+		<title>essarrgee/Luniere</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">Luniere</h1>
+			<div class="gamePageImageGallery">
+				<h2>Image Gallery</h2>
+				<img src="../images/luniere_screenshot1.png" alt="Screenshot">
+				<img src="../images/luniere_screenshot2.png" alt="Screenshot">
+				<img src="../images/luniere_screenshot3.png" alt="Screenshot">
+			</div>
+			<div class="gamePageSection">
+				<h2>Game Description</h2>
+				<p>A short, horror-themed adventure game with a paper aesthetic. 
+				<br><br>
+				Luniere wants to go back home, but the door is locked, and the keys 
+				are missing! 
+				Help her gather the keys and make it back home safe and sound! 
+				But beware; who knows what may lurk in the dark at night?</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>About</h2>
+				<p>
+				Winning 1st place in Aesthetics, 
+				Luniere made for Scream Jam 2020 in under 10 days with 
+				teammate Branchi,
+				who was responsible for all the art. Tools used included
+				Unity, Blender, and Photoshop.
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://essarrgee.itch.io/luniere">Game Page (itch.io)</a></li>
+					<li><a href="https://itch.io/jam/scream-jam-2020/rate/797131">Game Jam Page</a></li>
+				</ul>
+			</div>
+			<div class="gamePageSection">
+				<h2>Stats</h2>
+				<ul>
+					<li><p class="listStatus">Status: Complete</p></li>
+					<li><p class="listStatus">Date Started: October 13, 2020</p></li>
+					<li><p class="listStatus">Date Completed (Game Jam): October 24, 2020</p></li>
+					<li><p class="listStatus">Date Completed (Post-Jam): October 26, 2020</p></li>
+				</ul>
+			</div>
+		</div>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
+		</div>
+	</body>
+</html>
