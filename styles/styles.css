@@ -121,7 +121,7 @@ a, button {
 }
 
 .subIndex {
-	height: 900px;
+	height: 110vh;
 }
 
 .subIndex p:first-child{
@@ -144,6 +144,7 @@ a, button {
 	grid-template-columns: repeat(auto-fit, 48%);
 	grid-gap: 10px;
 	justify-content: center;
+	padding-bottom: 5px;
 }
 
 .gameSection {
