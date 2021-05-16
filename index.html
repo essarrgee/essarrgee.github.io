@@ -18,36 +18,36 @@
 			</div>
 		</header>
 		
-		<div class="carousel">
+		<div class="mainIndex" >
+			<h1 class="mainText" id="mainText">console.log("Hello!");</h1>
+			<p>Dev in progress.</p>
+			<a class="indexButton" href="#subIndex1">View_More();</a>
+		</div>
+		
+		<div class="carousel" id="subIndex1">
 			<div class="carousel-background-display">
 				<img id="carouselBG" src="images/luniere_screenshot4.gif"></img>
 				<img class="carousel-hidden" id="carouselBG2" src=""></img>
 			</div>
-			<h1 class="carousel-text carousel-label">Welcome</h1>
-			<p class="carousel-text carousel-projecttitle" id="projectTitle">Project: Luniere</p>
+			<h1 class="carousel-text carousel-label">Project:</h1>
+			<p class="carousel-text carousel-projecttitle" id="projectTitle">Luniere</p>
 			<div class="carousel-visit-button">
 				<a class="indexButton" href="gamepages/luniere" id="carouselViewButton">View_Project();</a>
 			</div>
 			<p class="carousel-text">Featured Projects:</p>
 			<div class="carousel-container">
 				<div class="carousel-scroll">
-					<img stored_href="gamepages/luniere" stored_img="images/luniere_screenshot4.gif" class="carousel-item" id="Project: Luniere" src="images/luniere_screenshot1.png" onClick="setCarouselBG(this)"></img>
-					<img stored_href="gamepages/eyeworm" stored_img="images/eyeworm_screenshot2.gif" class="carousel-item" id="Project: Eyeworm" src="images/eyeworm_icon.png" onClick="setCarouselBG(this)"></img>
-					<img stored_href="gamepages/icetrial" stored_img="images/icetrial_screenshot4.gif" class="carousel-item" id="Project: Ice Trial" src="images/icetrial_screenshot1.png" onClick="setCarouselBG(this)"></img>
-					<img stored_href="gamepages/platformrpg" stored_img="images/prpg_screenshot4.gif" class="carousel-item" id="Project: Platformer RPG" src="images/prpg_icon.png" onClick="setCarouselBG(this)"></img>
-					<img stored_href="gamepages/bloom" stored_img="images/bloom_screenshot3.png" class="carousel-item" id="Project: Bloom" src="images/bloom_screenshot1.png" onClick="setCarouselBG(this)"></img>
-					<img stored_href="gamepages/seekquill" stored_img="images/seekquill_screenshot2.png" class="carousel-item" id="Project: Seek Quill" src="images/seekquill_screenshot1.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/luniere" stored_img="images/luniere_screenshot4.gif" class="carousel-item" id="Luniere" src="images/luniere_screenshot1.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/eyeworm" stored_img="images/eyeworm_screenshot2.gif" class="carousel-item" id="Eyeworm" src="images/eyeworm_icon.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/icetrial" stored_img="images/icetrial_screenshot4.gif" class="carousel-item" id="Ice Trial" src="images/icetrial_screenshot1.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/platformrpg" stored_img="images/prpg_screenshot4.gif" class="carousel-item" id="Platformer RPG" src="images/prpg_icon.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/bloom" stored_img="images/bloom_screenshot3.png" class="carousel-item" id="Bloom" src="images/bloom_screenshot1.png" onClick="setCarouselBG(this)"></img>
+					<img stored_href="gamepages/seekquill" stored_img="images/seekquill_screenshot2.png" class="carousel-item" id="Seek Quill" src="images/seekquill_screenshot1.png" onClick="setCarouselBG(this)"></img>
 					<img stored_href="projectpages/icecreamshop" class="carousel-item" id="Project: Ice Cream Shop" src="images/icecreamshop_screenshot1.png" onClick="setCarouselBG(this)"></img>
 					<img stored_href="gamepages/blossomblast" class="carousel-item" id="Project: Blossom Blast" src="images/blossomblast_screenshot2.png" onClick="setCarouselBG(this)"></img>
 					<a href="projects"><div class="carousel-scroll-viewall">View All</div></a>
 				</div>
 			</div>
-		</div>
-		
-		<div class="mainIndex" id="subIndex1">
-			<h1 class="mainText" id="mainText">console.log("Hello!");</h1>
-			<p>Dev in progress.</p>
-			<a class="indexButton" href="#subIndex2">Read_More();</a>
 		</div>
 		
 		<div class="subIndex" id="subIndex2">
@@ -60,7 +60,7 @@
 			<p>You'll find an array of projects that I've worked on 
 				in the past, as well as upcoming works, here.
 			</p>
-			<a class="indexButton" href="projects">View_More();</a>
+			<a class="indexButton" href="projects">View_Projects();</a>
 		</div>
 		
 		<script>randomMainText();</script>
