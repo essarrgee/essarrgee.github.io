@@ -155,6 +155,9 @@ a, button {
 	float: left;
 	border-radius: 5px;
 	box-shadow: 0px 5px 0px 0px rgb(40 40 40);
+	overflow: hidden;
+	display: inline-block;
+	text-decoration-color: transparent;
 }
 
 .gameSection:hover {
@@ -165,6 +168,23 @@ a, button {
 .gameSection:active {
 	background-color: rgb(50,50,50);
 	box-shadow: 0px 5px 0px 0px rgb(40 40 40);
+}
+
+.web-play {
+	background-color: rgba(40,240,30,0.6);
+	position: relative;
+	transform: rotate(30deg);
+	left: 43%;
+	bottom: 93%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 11pt;
+	text-shadow: 0 2px rgba(0,0,0,0.4);
+	text-decoration: none;
+	
+	color: rgb(255,255,255);
+	font-weight: bold;
 }
 
 .gameLink {
