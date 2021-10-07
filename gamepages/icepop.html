@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
+		<title>essarrgee/Ice-Pop</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">Ice Pop!</h1>
+			<iframe id="unityWebGL" frameborder="0" src="https://itch.io/embed-upload/4560045?color=797fab" allowfullscreen="" width="1000" height="670"></iframe>
+			<div class="gamePageImageGallery">
+				<h2>Image Gallery</h2>
+				<img src="../images/icepop_screenshot1.png" alt="Screenshot">
+				<img src="../images/icepop_screenshot2.png" alt="Screenshot">
+				<img src="../images/icepop_screenshot3.png" alt="Screenshot">
+				<img src="../images/icepop_screenshot4.png" alt="Screenshot">
+				<img src="../images/icepop_screenshot5.png" alt="Screenshot">
+			</div>
+			<div class="gamePageSection">
+				<h2>Game Description</h2>
+				<p>A survival minigame where you round up UNSTABLE EXPLOSIVE PENGUINS 
+				to the goal to unlock the elevator! Careful not to let them touch 
+				anything, or they’ll EXPLODE! Watch out for enemies too!</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>About</h2>
+				<p>A game made under 72 hours for Ludum Dare 49, in collaboration with Branchi.
+				<br><br>
+				For this jam, the theme was "Unstable". We correlated that with bombs, and
+				going with the usual theme of penguins, we ultimately decided on making a game
+				about penguins that explode. Since we limited our scope this time, we had a bit
+				more time to polish some parts of the game, including adding music and sound 
+				effects. We cut out some features due to time constraints, but this
+				feels the most fleshed out of our game jam projects to this date.
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://essarrgee.itch.io/ice-pop" target="_blank">Game Page (itch.io)</a></li>
+					<li><a href="https://ldjam.com/events/ludum-dare/49/ice-pop" target="_blank">Ludum Dare 49 Page</a></li>
+				</ul>
+			</div>
+			<div class="gamePageSection">
+				<h2>Stats</h2>
+				<ul>
+					<li><p class="listStatus">Status: Completed</p></li>
+					<li><p class="listStatus">Date Started: October 1, 2021</p></li>
+					<li><p class="listStatus">Date Completed (Game Jam): October 4, 2021</p></li>
+				</ul>
+			</div>
+		</div>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
+		</div>
+	</body>
+</html>
