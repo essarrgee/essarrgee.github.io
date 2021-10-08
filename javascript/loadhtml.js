@@ -4,6 +4,6 @@ $(document).ready(function(){
 })
 
 document.write(`
-	<link rel="apple-touch-icon" href="images/bloom_icon.png"/>
-	<link rel="icon" href="images/bloom_icon.png">
+	<link rel="apple-touch-icon" href="/images/bloom_icon.png"/>
+	<link rel="icon" href="/images/bloom_icon.png">
 `);
