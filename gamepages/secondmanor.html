@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
+		<title>essarrgee/SecondManor</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">Second Manor</h1>
+			<div class="gamePageImageGallery">
+				<h2>Image Gallery</h2>
+				<img src="../images/secondmanor_screenshot1.png" alt="Screenshot">
+				<img src="../images/secondmanor_screenshot2.png" alt="Screenshot">
+				<img src="../images/secondmanor_screenshot3.png" alt="Screenshot">
+				<img src="../images/secondmanor_screenshot4.png" alt="Screenshot">
+			</div>
+			<div class="gamePageSection">
+				<h2>Game Description</h2>
+				<p>A short puzzle/horror game. 
+				<br><br>
+				Following the events of Luniere, our protagonist and her friend, Solaire, 
+				have entered Pengu's Manor to spend some 
+				quality time with their friend Pengu. 
+				Things don't go as planned, however, and it's 
+				up to our protagonists to save the day! </p>
+			</div>
+			<div class="gamePageSection">
+				<h2>About</h2>
+				<p>
+				Second Manor was made for itch.io's 
+				Scream Jam 2021 in under 10 days with 
+				teammate Branchi,
+				who was responsible for all the art. Tools used included
+				Unity, Blender, and Photoshop.
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://essarrgee.itch.io/second-manor" target="_blank">Game Page (itch.io)</a></li>
+					<li><a href="https://itch.io/jam/scream-jam-2021/rate/1246920" target="_blank">Game Jam Page</a></li>
+				</ul>
+			</div>
+			<div class="gamePageSection">
+				<h2>Stats</h2>
+				<ul>
+					<li><p class="listStatus">Status: Complete</p></li>
+					<li><p class="listStatus">Date Started: October 13, 2021</p></li>
+					<li><p class="listStatus">Date Completed (Game Jam): October 23, 2021</p></li>
+				</ul>
+			</div>
+		</div>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
+		</div>
+	</body>
+</html>
