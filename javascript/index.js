@@ -23,6 +23,14 @@ function randomMainText() {
 	}
 }
 
+function indexViewMore()
+{
+	var subIndex1 = document.querySelector("#subIndex1");
+	if (subIndex !== null && subIndex !== undefined) {
+		subIndex.scrollIntoView();
+	}
+}
+
 function expand() {
 	var topNav = document.getElementById("topNav");
 	if (topNav.className == "topNav") {
