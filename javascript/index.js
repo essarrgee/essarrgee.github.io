@@ -26,8 +26,8 @@ function randomMainText() {
 function indexViewMore()
 {
 	var subIndex1 = document.querySelector("#subIndex1");
-	if (subIndex !== null && subIndex !== undefined) {
-		subIndex.scrollIntoView();
+	if (subIndex1 !== null && subIndex1 !== undefined) {
+		subIndex1.scrollIntoView();
 	}
 }
 
