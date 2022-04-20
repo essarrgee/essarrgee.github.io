@@ -3,6 +3,11 @@ var carouselBG2 = document.getElementById("carouselBG2");
 var carouselProjectTitle = document.getElementById("projectTitle");
 var carouselViewButton = document.getElementById("carouselViewButton");
 
+// Firefox check found in: 
+// https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+
 function setCarouselBG(element) {
 	if (carouselViewButton && carouselBG && carouselBG2 && element) {
 		let screenshot = element.src;
@@ -27,15 +32,19 @@ let previousTime = 0;
 
 function Update(time)
 {
-	if (previousTime !== undefined) {
-		
-	}
-	previousTime = time;
-	
-	if (carouselContainer !== null) {
-		carouselContainer.scroll({top: 0, 
-			left: carouselContainer.scrollLeft+(100*carouselScrolling), 
-			behavior: "smooth"});
+	if (time > previousTime+5) {
+		previousTime = time;
+		if (carouselContainer !== null) {
+			if (!isFirefox) {
+				carouselContainer.scroll({top: 0, 
+					left: carouselContainer.scrollLeft+(10*carouselScrolling)});
+			}
+			else {
+				carouselContainer.scroll({top: 0, 
+					left: carouselContainer.scrollLeft+(100*carouselScrolling),
+					behavior: "smooth"});
+			}
+		}
 	}
 	window.requestAnimationFrame(Update);
 }
@@ -50,21 +59,16 @@ let carouselScrolling = 0;
 
 if (carouselContainer !== null && 
 carouselScrollLeft !== null && carouselScrollRight !== null) {
-	console.log(carouselContainer);
 	carouselScrollLeft.addEventListener("mouseover",function(event) {
 		carouselScrolling = -1;
-		requestAnimationId = window.requestAnimationFrame(Update);
 	});
 	carouselScrollRight.addEventListener("mouseover",function(event) {
 		carouselScrolling = 1;
-		requestAnimationId = window.requestAnimationFrame(Update);
 	});
 	carouselScrollLeft.addEventListener("mouseout",function(event) {
 		carouselScrolling = 0;
-		window.cancelAnimationFrame(requestAnimationId);
 	});
 	carouselScrollRight.addEventListener("mouseout",function(event) {
 		carouselScrolling = 0;
-		window.cancelAnimationFrame(requestAnimationId);
 	});
 }
