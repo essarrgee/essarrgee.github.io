@@ -55,8 +55,8 @@ body {
 }
 
 .carousel-projecttitle {
-	background-color: rgba(0,0,0, 0.05);
-	box-shadow: 0px 2px 3px rgba(0,0,0, 0.1);
+	background-color: rgba(0,0,0, 0.1);
+	box-shadow: 0px 2px 3px rgba(0,0,0, 0.2);
 	top: -81%;
 	width: 100%;
 	left: 0;
@@ -83,8 +83,8 @@ body {
 
 .carousel-container {
 	position: relative;
-	background-color: rgba(0,0,0, 0.05);
-	box-shadow: 0px 2px 3px rgba(0,0,0, 0.1);
+	background-color: rgba(0,0,0, 0.1);
+	box-shadow: 0px 2px 3px rgba(0,0,0, 0.2);
 	padding-top: 5px;
 	top: -105%;
 	width: 100%;
@@ -134,7 +134,7 @@ body {
 
 .carousel-scroll-flash {
 	width: 300px !important;
-	height: 60px !important;
+	height: 120px !important;
 	border-radius: 100%;
 	background-color: rgb(150,150,150,0);
 	transition: all 0.2s;
@@ -150,17 +150,17 @@ body {
 
 .carousel-scroll-flash.flash {
 	width: 300px !important;
-	height: 120px !important;
-	background-color: rgb(255,255,255,0.4);
-	box-shadow: 5px 5px 5px rgba(150,150,150, 0.3);
+	height: 140px !important;
+	background-color: rgb(255,255,255,0.1);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
 }
 
 .carousel-scroll-flash.flash.left {
-	transform: translateX(-55%) scaleX(160%);
+	transform: translateX(-55%) scaleX(165%);
 }
 
 .carousel-scroll-flash.flash.right {
-	transform: translateX(55%) scaleX(160%);
+	transform: translateX(55%) scaleX(165%);
 }
 
 .carousel-scroll {
@@ -187,11 +187,19 @@ body {
 	text-decoration: none;
 }
 
+.carousel-scroll img.selected {
+	box-sizing: border-box;
+	border: 5px rgba(70,250,150,0.8) ridge;
+	box-shadow: 0px 3px 4px rgba(10,190,90,0.8);
+}
+
 .carousel-scroll-viewall {
+	display: flex;
 	font-size: 25px;
 	text-shadow: 0px 0px 3px rgb(0,0,0);
 	color: rgba(255,255,255,0.9);
-	margin-top: 35px;
+	justify-content: center;
+	align-items: center;
 }
 
 .carousel-scroll img:hover,

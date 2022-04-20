@@ -2,6 +2,7 @@ var carouselBG = document.getElementById("carouselBG");
 var carouselBG2 = document.getElementById("carouselBG2");
 var carouselProjectTitle = document.getElementById("projectTitle");
 var carouselViewButton = document.getElementById("carouselViewButton");
+let carouselItems = document.querySelectorAll(".carousel-item");
 
 // Firefox check found in: 
 // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
@@ -22,8 +23,19 @@ function setCarouselBG(element) {
 		else {
 			carouselBG.src = screenshot;
 		}
+		selectCarouselItem(element);
 		carouselProjectTitle.innerHTML = element.id;
 		carouselViewButton.href = element.getAttribute("stored_href");
+	}
+}
+
+function selectCarouselItem(element)
+{
+	for (item of carouselItems) {
+		item.classList.remove("selected");
+	}
+	if (element !== null && element !== undefined) {
+		element.classList.add("selected");
 	}
 }
 
