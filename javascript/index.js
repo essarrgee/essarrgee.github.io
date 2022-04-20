@@ -1,4 +1,5 @@
 var frame = 39;
+let subIndex1Button = document.querySelector("#subIndex1Button");
 
 function randomMainText() {
 	var mainText = document.getElementById("mainText");
@@ -30,6 +31,14 @@ function indexViewMore()
 		subIndex1.scrollIntoView();
 	}
 }
+
+if (subIndex1Button !== null && subIndex1Button !== undefined) {
+	console.log(subIndex1Button);
+	subIndex1Button.addEventListener("click", function(event) {
+		indexViewMore();
+	});
+}
+
 
 function expand() {
 	var topNav = document.getElementById("topNav");
