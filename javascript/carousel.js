@@ -56,18 +56,31 @@ let carouselScrollLeft = document.querySelector("#carousel-scroll-left");
 let carouselScrollRight = document.querySelector("#carousel-scroll-right");
 let carouselScrolling = 0;
 
+function ChangeScrolling(value, scrollElement)
+{
+	carouselScrolling = value;
+	if (scrollElement !== null) {
+		if (value != 0) {
+			scrollElement.childNodes[1].classList.add("flash");
+		}
+		else {
+			scrollElement.childNodes[1].classList.remove("flash");
+		}
+	}
+}
+
 if (carouselContainer !== null && 
 carouselScrollLeft !== null && carouselScrollRight !== null) {
 	carouselScrollLeft.addEventListener("mouseover",function(event) {
-		carouselScrolling = -1;
+		ChangeScrolling(-1, carouselScrollLeft);
 	});
 	carouselScrollRight.addEventListener("mouseover",function(event) {
-		carouselScrolling = 1;
+		ChangeScrolling(1, carouselScrollRight);
 	});
 	carouselScrollLeft.addEventListener("mouseout",function(event) {
-		carouselScrolling = 0;
+		ChangeScrolling(0, carouselScrollLeft);
 	});
 	carouselScrollRight.addEventListener("mouseout",function(event) {
-		carouselScrolling = 0;
+		ChangeScrolling(0, carouselScrollRight);
 	});
 }

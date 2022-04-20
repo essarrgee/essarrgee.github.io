@@ -117,21 +117,52 @@ body {
 	align-items: center;
 	font-size: 90pt;
 	color: rgb(255,255,255,0.6);
+	overflow: visible;
 }
 
 #carousel-scroll-left {
 	left: 0;
 	justify-content: left;
 	transform: translateX(-30%) scaleX(40%);
-	background-color: rgba(100,0,0, 0);
 }
 
 #carousel-scroll-right {
 	right: 0;
 	justify-content: right;
 	transform: translateX(30%) scaleX(40%);
-	background-color: rgba(0,100,0, 0);
 }
+
+.carousel-scroll-flash {
+	width: 300px !important;
+	height: 60px !important;
+	border-radius: 100%;
+	background-color: rgb(150,150,150,0);
+	transition: all 0.2s;
+}
+
+.carousel-scroll-flash.left {
+	transform: translateX(-50%) scaleX(0);
+}
+
+.carousel-scroll-flash.right {
+	transform: translateX(50%) scaleX(0);
+}
+
+.carousel-scroll-flash.flash {
+	width: 300px !important;
+	height: 120px !important;
+	background-color: rgb(255,255,255,0.4);
+	box-shadow: 5px 5px 5px rgba(150,150,150, 0.3);
+}
+
+.carousel-scroll-flash.flash.left {
+	transform: translateX(-55%) scaleX(160%);
+}
+
+.carousel-scroll-flash.flash.right {
+	transform: translateX(55%) scaleX(160%);
+}
+
 .carousel-scroll {
 	left: 0;
 	top: 0;
