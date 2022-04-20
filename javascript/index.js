@@ -24,6 +24,8 @@ function randomMainText() {
 	}
 }
 
+randomMainText();
+
 function indexViewMore()
 {
 	var subIndex1 = document.querySelector("#subIndex1");
@@ -33,7 +35,6 @@ function indexViewMore()
 }
 
 if (subIndex1Button !== null && subIndex1Button !== undefined) {
-	console.log(subIndex1Button);
 	subIndex1Button.addEventListener("click", function(event) {
 		indexViewMore();
 	});
