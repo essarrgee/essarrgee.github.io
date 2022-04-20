@@ -34,10 +34,9 @@ function Update(time)
 {
 	if (time > previousTime+5) {
 		previousTime = time;
-		if (carouselContainer !== null) {
+		if (carouselContainer !== null && carouselScrolling !== 0) {
 			if (!isFirefox) {
-				carouselContainer.scroll({top: 0, 
-					left: carouselContainer.scrollLeft+(10*carouselScrolling)});
+				carouselContainer.scrollLeft += (10*carouselScrolling);
 			}
 			else {
 				carouselContainer.scroll({top: 0, 
