@@ -21,3 +21,50 @@ function setCarouselBG(element) {
 		carouselViewButton.href = element.getAttribute("stored_href");
 	}
 }
+
+
+let previousTime = 0;
+
+function Update(time)
+{
+	if (previousTime !== undefined) {
+		
+	}
+	previousTime = time;
+	
+	if (carouselContainer !== null) {
+		carouselContainer.scroll({top: 0, 
+			left: carouselContainer.scrollLeft+(100*carouselScrolling), 
+			behavior: "smooth"});
+	}
+	window.requestAnimationFrame(Update);
+}
+
+let requestAnimationId = window.requestAnimationFrame(Update);
+
+
+let carouselContainer = document.querySelector(".carousel-container");
+let carouselScrollLeft = document.querySelector("#carousel-scroll-left");
+let carouselScrollRight = document.querySelector("#carousel-scroll-right");
+let carouselScrolling = 0;
+
+if (carouselContainer !== null && 
+carouselScrollLeft !== null && carouselScrollRight !== null) {
+	console.log(carouselContainer);
+	carouselScrollLeft.addEventListener("mouseover",function(event) {
+		carouselScrolling = -1;
+		requestAnimationId = window.requestAnimationFrame(Update);
+	});
+	carouselScrollRight.addEventListener("mouseover",function(event) {
+		carouselScrolling = 1;
+		requestAnimationId = window.requestAnimationFrame(Update);
+	});
+	carouselScrollLeft.addEventListener("mouseout",function(event) {
+		carouselScrolling = 0;
+		window.cancelAnimationFrame(requestAnimationId);
+	});
+	carouselScrollRight.addEventListener("mouseout",function(event) {
+		carouselScrolling = 0;
+		window.cancelAnimationFrame(requestAnimationId);
+	});
+}
