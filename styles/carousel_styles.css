@@ -429,10 +429,14 @@ body {
 	}
 	
 	#projectCarouselLabel.carousel-label {
-		top: -119%;
+		top: -116%;
 	}
 	
 	#projectDescription.carousel-subtext {
 		top: -91%;
+	}
+	
+	.carousel-container {
+		top: -85%;
 	}
 }
