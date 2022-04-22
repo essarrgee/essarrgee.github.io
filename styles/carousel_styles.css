@@ -413,13 +413,13 @@ body {
 	}
 	
 	.carousel-scroll-controller {
-		top: -108%;
+		top: -105%;
 	}
 }
 
 @media screen and (min-height: 900px) {
 	.carousel-scroll-controller {
-		top: -106%;
+		top: -102.5%;
 	}
 }
 
