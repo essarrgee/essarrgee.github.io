@@ -127,9 +127,9 @@ body {
 	position: relative;
 	background-color: rgba(0,0,0,0);
 	padding-top: 5px;
-	top: -111%;
+	top: -110%;
 	width: 100%;
-	height: 22.5%;
+	height: 150px;
 	z-index: 2;
 	transition: all 1s;
 	pointer-events: none;
@@ -411,9 +411,19 @@ body {
 	#projectDescription.carousel-subtext {
 		top: -90%;
 	}
+	
+	.carousel-scroll-controller {
+		top: -108%;
+	}
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-height: 900px) {
+	.carousel-scroll-controller {
+		top: -106%;
+	}
+}
+
+@media screen and (min-width: 1600px) {
 	#projectTitleLabel.carousel-label {
 		top: -106%;
 	}
