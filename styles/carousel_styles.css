@@ -365,7 +365,7 @@ body {
 		width: 91%;
 		padding-left: 3%;
 		padding-right: 5%;
-		font-size: 13pt;
+		font-size: 11pt;
 	}
 
 	.carousel-subtext {
@@ -378,7 +378,7 @@ body {
 	}
 	
 	.carousel-visit-button {
-		top: -55%;
+		top: -68%;
 	}
 }
 
