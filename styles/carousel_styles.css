@@ -115,7 +115,7 @@ body {
 	padding-top: 5px;
 	top: -88%;
 	width: 100%;
-	height: 20%;
+	height: 150px;
 	text-align: center;
 	overflow: hidden;
 	overflow-x: scroll;
@@ -246,20 +246,6 @@ body {
 	box-sizing: border-box;
 	border: 10px rgba(70,250,150,0.8) ridge;
 	box-shadow: 0px 3px 4px rgba(10,190,90,0.8);
-}
-
-@media screen and (min-height: 760px) {
-	#projectTitleLabel.carousel-label {
-		top: -105%;
-	}
-	
-	#projectCarouselLabel.carousel-label {
-		top: -120%;
-	}
-	
-	#projectDescription.carousel-subtext {
-		top: -90%;
-	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -413,3 +399,30 @@ body {
 	}
 }
 
+@media screen and (min-height: 760px) {
+	#projectTitleLabel.carousel-label {
+		top: -97%;
+	}
+	
+	#projectCarouselLabel.carousel-label {
+		top: -110.5%
+	}
+	
+	#projectDescription.carousel-subtext {
+		top: -90%;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	#projectTitleLabel.carousel-label {
+		top: -105%;
+	}
+	
+	#projectCarouselLabel.carousel-label {
+		top: -118%;
+	}
+	
+	#projectDescription.carousel-subtext {
+		top: -90%;
+	}
+}
