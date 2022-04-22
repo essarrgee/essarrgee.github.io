@@ -80,3 +80,13 @@ function resizeTopNav() {
 	}
 }
 
+function Start()
+{
+	let unloadedElements = document.querySelectorAll(".unloaded");
+	for (element of unloadedElements) {
+		element.classList.remove("unloaded");
+	}
+}
+
+Start();
+

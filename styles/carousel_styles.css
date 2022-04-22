@@ -40,8 +40,8 @@ body {
 }
 
 .carousel-text {
-	background-color: rgba(50,50,50, 0.5);
-	box-shadow: 0px 2px 3px rgba(0,0,0, 0.6);
+	background-color: rgba(50,50,50, 0.6);
+	box-shadow: 0px 2px 3px rgba(0,0,0, 0.7);
 	position: relative;
 	top: -104%;
 	width: 60%;
@@ -110,8 +110,8 @@ body {
 
 .carousel-container {
 	position: relative;
-	background-color: rgba(0,0,0, 0.1);
-	box-shadow: 0px 2px 3px rgba(0,0,0, 0.2);
+	background-color: rgba(0,0,0, 0.2);
+	box-shadow: 0px 2px 3px rgba(0,0,0, 0.3);
 	padding-top: 5px;
 	top: -88%;
 	width: 100%;
@@ -248,6 +248,20 @@ body {
 	box-shadow: 0px 3px 4px rgba(10,190,90,0.8);
 }
 
+@media screen and (min-height: 760px) {
+	#projectTitleLabel.carousel-label {
+		top: -105%;
+	}
+	
+	#projectCarouselLabel.carousel-label {
+		top: -120%;
+	}
+	
+	#projectDescription.carousel-subtext {
+		top: -90%;
+	}
+}
+
 @media screen and (max-width: 1200px) {
 	#projectTitleLabel.carousel-label {
 		top: -98%;
@@ -350,7 +364,7 @@ body {
 	}
 	
 	#projectCarouselLabel.carousel-label {
-		top: -114%;
+		top: -113%;
 		width: 100%;
 	}
 	

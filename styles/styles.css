@@ -113,11 +113,22 @@ a, button {
 	margin-top: 18%;
 	font-size: 50px;
 	margin-bottom: 5%;
+	transition: all 1s;
 }
 
-.nonMainText {
-	margin: 50px 0 15px 0;
-	font-size: 40px;
+.mainText.unloaded {
+	transform: translateY(50%);
+	color: rgba(255,255,255,0);
+}
+
+.subText {
+	transition: all 1s;
+	transition-delay: 500ms;
+}
+
+.subText.unloaded {
+	transform: translateY(50%);
+	color: rgba(255,255,255,0);
 }
 
 .subIndex {
