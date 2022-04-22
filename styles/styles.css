@@ -118,6 +118,7 @@ a, button {
 	font-size: 50px;
 	margin-bottom: 5%;
 	transition: all 1s;
+	transition-delay: 100ms;
 }
 
 .mainText.unloaded {
@@ -127,7 +128,7 @@ a, button {
 
 .subText {
 	transition: all 1s;
-	transition-delay: 350ms;
+	transition-delay: 400ms;
 }
 
 .subText.unloaded {
