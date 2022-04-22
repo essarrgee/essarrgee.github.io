@@ -44,38 +44,65 @@ body {
 	box-shadow: 0px 2px 3px rgba(0,0,0, 0.6);
 	position: relative;
 	top: -104%;
-	left: 2.5%;
 	width: 60%;
 	padding-left: 1%;
 	border-radius: 10px;
 	font-size: 40px;
-	text-shadow: 0px 0px 9px rgba(0,0,0,0.5);
+	text-shadow: 0px 0px 9px rgba(0,0,0,1);
 	transition: all 1s;
 	text-align: left;
 }
 
-.carousel-projecttitle {
-	background-color: rgba(0,0,0, 0.1);
-	box-shadow: 0px 2px 3px rgba(0,0,0, 0.2);
+.carousel-subtext {
+	background-color: rgba(0,0,0, 0.2);
+	box-shadow: 0px 2px 3px rgba(0,0,0, 0.3);
 	top: -81%;
 	width: 100%;
-	left: 0;
-	padding-left: 3.5%;
 	font-size: 80px;
 	font-weight: bold;
+}
+
+#projectTitle.carousel-subtext {
+	padding-left: 3.5%;
+	top: -83.5%;
+	border-radius: 0;
+}
+
+#projectDescription.carousel-subtext {
+	top: -93%;
+	left: -10%;
+	font-size: 24px;
+	height: 10%;
+	width: 60%;
+	padding-left: 13.75%;
+	padding-right: 2%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
 }
 
 .carousel-label {
 	margin-top: 8%;
 	margin-bottom: -15%;
 	width: 20%;
+	left: -2%;
+	padding-left: 4%;
+}
+
+#projectTitleLabel.carousel-label {
+	top: -106%;
+}
+
+#projectCarouselLabel.carousel-label {
+	top: -121.5%;
+	width: 50%;
 }
 
 .carousel-visit-button {
 	position: relative;
 	width: 100%;
 	height: 95px;
-	top: -52%;
+	top: -61%;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -86,7 +113,7 @@ body {
 	background-color: rgba(0,0,0, 0.1);
 	box-shadow: 0px 2px 3px rgba(0,0,0, 0.2);
 	padding-top: 5px;
-	top: -105%;
+	top: -88%;
 	width: 100%;
 	height: 20%;
 	text-align: center;
@@ -100,7 +127,7 @@ body {
 	position: relative;
 	background-color: rgba(0,0,0,0);
 	padding-top: 5px;
-	top: -128%;
+	top: -111%;
 	width: 100%;
 	height: 22.5%;
 	z-index: 2;
@@ -181,7 +208,7 @@ body {
 	float: left;
 	opacity: 0.9;
 	box-shadow: 0px 3px 4px rgb(0,0,0);
-	transition: all 0.2s;
+	transition: all 0.1s;
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
@@ -189,7 +216,7 @@ body {
 
 .carousel-scroll img.selected {
 	box-sizing: border-box;
-	border: 5px rgba(70,250,150,0.8) ridge;
+	border: 4px rgba(70,250,150,0.8) ridge;
 	box-shadow: 0px 3px 4px rgba(10,190,90,0.8);
 }
 
@@ -209,6 +236,32 @@ body {
 	margin: 1.3% 0 0 2.75%;
 }
 
+.carousel-scroll img:active{
+	box-sizing: border-box;
+	border: 10px rgba(70,250,150,0.8) ridge;
+	box-shadow: 0px 3px 4px rgba(10,190,90,0.8);
+}
+
+.carousel-scroll img.selected:active{
+	box-sizing: border-box;
+	border: 10px rgba(70,250,150,0.8) ridge;
+	box-shadow: 0px 3px 4px rgba(10,190,90,0.8);
+}
+
+@media screen and (max-width: 1200px) {
+	#projectTitleLabel.carousel-label {
+		top: -98%;
+	}
+	
+	#projectCarouselLabel.carousel-label {
+		top: -114%;
+	}
+	
+	#projectDescription.carousel-subtext {
+		font-size: 14pt;
+	}
+}
+
 @media screen and (max-width: 900px) {
 	.carousel-text {
 		top: -105%;
@@ -219,13 +272,30 @@ body {
 		top: -98%;
 	}
 
-	.carousel-projecttitle {
+	.carousel-subtext {
 		top: -84%;
 		font-size: 50px;
 	}
 	
+	#projectTitleLabel.carousel-label {
+		top: -102%;
+	}
+	
+	#projectCarouselLabel.carousel-label {
+		top: -116.5%;
+	}
+	
+	#projectTitle.carousel-subtext {
+		top: -90%;
+	}
+	
+	#projectDescription.carousel-subtext {
+		top: -95%;
+		width: 75%;
+	}
+	
 	.carousel-container {
-		top: -104%;
+		top: -98%;
 	}
 	
 	.carousel-visit-button {
@@ -268,17 +338,41 @@ body {
 	}
 	
 	.carousel-container {
-		top: -104%;
+		top: -102%;
 	}
 	
 	.carousel-label {
 		top: -95%;
 	}
 	
-	.carousel-projecttitle {
+	#projectTitleLabel.carousel-label {
+		top: -96%;
+	}
+	
+	#projectCarouselLabel.carousel-label {
+		top: -114%;
+		width: 100%;
+	}
+	
+	#projectTitle.carousel-subtext {
+		top: -90%;
+		border-radius: 10px;
+	}
+
+	#projectDescription.carousel-subtext {
+		top: -95%;
+		left: 5%;
+		width: 91%;
+		padding-left: 3%;
+		padding-right: 5%;
+		font-size: 13pt;
+	}
+
+	.carousel-subtext {
 		background-color: rgba(150,150,150, 0.1);
 		box-shadow: 0px 2px 3px rgba(0,0,0, 0.4);
 		font-size: 50px;
+		border-radius: 10px;
 		top: -90%;
 		padding-left: 5%;
 	}
@@ -295,7 +389,7 @@ body {
 		left: -25%;
 	}
 	
-	.carousel-projecttitle {
+	.carousel-subtext {
 		font-size: 40px;
 		top: -90%;
 	}

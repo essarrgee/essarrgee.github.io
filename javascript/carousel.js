@@ -1,8 +1,10 @@
 var carouselBG = document.getElementById("carouselBG");
 var carouselBG2 = document.getElementById("carouselBG2");
-var carouselProjectTitle = document.getElementById("projectTitle");
+var carouselProjectTitle = document.querySelector("#projectTitle");
+var carouselProjectDesc = document.querySelector("#projectDescription");
 var carouselViewButton = document.getElementById("carouselViewButton");
 let carouselItems = document.querySelectorAll(".carousel-item");
+let defaultCarouselItem = document.querySelector(".carousel-item,.default");
 
 // Firefox check found in: 
 // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
@@ -12,10 +14,14 @@ var isFirefox = typeof InstallTrigger !== 'undefined';
 function setCarouselBG(element) {
 	if (carouselViewButton && carouselBG && carouselBG2 && element) {
 		let screenshot = element.src;
+		let desc = "";
 		carouselBG.classList.toggle("carousel-hidden");
 		carouselBG2.classList.toggle("carousel-hidden");
 		if (element.getAttribute("stored_img")) {
 			screenshot = element.getAttribute("stored_img");
+		}
+		if (element.getAttribute("stored_desc")) {
+			desc = element.getAttribute("stored_desc");
 		}
 		if (carouselBG.classList.contains("carousel-hidden")) {
 			carouselBG2.src = screenshot;
@@ -25,8 +31,13 @@ function setCarouselBG(element) {
 		}
 		selectCarouselItem(element);
 		carouselProjectTitle.innerHTML = element.id;
+		carouselProjectDesc.innerHTML = desc;
 		carouselViewButton.href = element.getAttribute("stored_href");
 	}
+}
+
+if (defaultCarouselItem !== null && defaultCarouselItem !== undefined) {
+	setCarouselBG(defaultCarouselItem);
 }
 
 function selectCarouselItem(element)
