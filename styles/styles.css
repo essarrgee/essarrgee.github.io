@@ -119,6 +119,10 @@ a, button {
 	margin-bottom: 5%;
 }
 
+.nonMainText {
+	margin-top: 60px;
+}
+
 .subText1 {
 	transition: all 0.5s;
 	transition-delay: 100ms;
