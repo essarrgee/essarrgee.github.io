@@ -80,12 +80,39 @@ function resizeTopNav() {
 	}
 }
 
+
+let unloadedParentElements = 
+	document.querySelectorAll(".unloadedParent");
+let loadedElementSet = new Set();
+
+function OnScroll()
+{
+	let windowHeight = window.innerHeight;
+	// console.log(window.screenY);
+	for (element of unloadedParentElements) {
+		if (!loadedElementSet.has(element)) {
+			let position = element.getBoundingClientRect();
+			// console.log(position.top);
+			if (position.top > -(windowHeight/3.5) && position.top < (windowHeight/1.75)) {
+				// console.log(position.top);
+				let unloadedElements = 
+					element.querySelectorAll(".unloaded");
+				for (subElement of unloadedElements) {
+					subElement.classList.remove("unloaded");
+				}
+				loadedElementSet.add(element);
+			}
+		}
+	}
+}
+
+document.addEventListener("scroll", function(event) {
+	OnScroll();
+});
+
 function Start()
 {
-	let unloadedElements = document.querySelectorAll(".unloaded");
-	for (element of unloadedElements) {
-		element.classList.remove("unloaded");
-	}
+	OnScroll();
 }
 
 Start();
