@@ -93,7 +93,7 @@ function OnScroll()
 		if (!loadedElementSet.has(element)) {
 			let position = element.getBoundingClientRect();
 			// console.log(position.top);
-			if (position.top > -(windowHeight/3.5) && position.top < (windowHeight/1.75)) {
+			if (position.top > -(windowHeight/2) && position.top < (windowHeight/1.2)) {
 				// console.log(position.top);
 				let unloadedElements = 
 					element.querySelectorAll(".unloaded");

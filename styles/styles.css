@@ -120,23 +120,36 @@ a, button {
 }
 
 .subText1 {
-	transition: all 1s;
+	transition: all 0.5s;
 	transition-delay: 100ms;
 }
 
 .subText2 {
-	transition: all 1s;
+	transition: all 0.5s;
 	transition-delay: 500ms;
 }
 
 .subText3 {
-	transition: all 1s;
+	transition: all 0.5s;
 	transition-delay: 900ms;
+}
+
+.subText4 {
+	transition: all 0.5s;
+	transition-delay: 1300ms;
 }
 
 .unloaded {
 	transform: translateY(80%) !important;
 	color: rgba(255,255,255,0) !important;
+}
+
+.gameSection.unloaded.left {
+	transform: translateX(0) !important;
+}
+
+.gameSection.unloaded.right {
+	transform: translateX(0) !important;
 }
 
 .subIndex {
