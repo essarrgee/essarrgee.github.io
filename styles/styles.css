@@ -7,7 +7,7 @@
 ::-webkit-scrollbar {
 	width: 4px;
 	height: 4px;
-	opacity: 0;
+	opacity: 0.4;
 	transition: opacity 1s;
 }
 
