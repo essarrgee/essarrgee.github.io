@@ -7,17 +7,21 @@
 ::-webkit-scrollbar {
 	width: 4px;
 	height: 4px;
-	opacity: 0.4;
+	opacity: 0;
 	transition: opacity 1s;
 }
 
+::-webkit-scrollbar-thumb {
+	background: rgba(70,250,150,0.2);
+}
+
 ::-webkit-scrollbar-thumb:hover {
-	background: rgb(70,250,150);
+	background: rgba(70,250,150,1);
 	opacity: 1;
 }
 
 ::-webkit-scrollbar-thumb:active {
-	background: rgb(0,180,80);
+	background: rgba(0,180,80,1);
 	opacity: 1;
 }
 
