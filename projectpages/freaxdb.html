@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
+		<title>essarrgee/FreAXDB</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">FreAXDB</h1>
+			<div class="gamePageImageGallery">
+				<h2>Image Gallery</h2>
+				<img src="../images/freaxdb_screenshot1.png" alt="Screenshot">
+			</div>
+			<div class="gamePageSection">
+				<h2>App Description</h2>
+				<p>
+					"Database" of creatures and other content 
+					for my game "FreAX".
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>About</h2>
+				<p>
+					A webapp made using HTML, CSS, JavaScript, 
+					and SQLite.
+					SQLite was used mostly for its interface.
+					The database itself is converted into a JSON file
+					and parsed by the webapp to present information.
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://freax-database.firebaseapp.com/" target="_blank">App Page (Firebase)</a></li>
+				</ul>
+			</div>
+			<div class="gamePageSection">
+				<h2>Stats</h2>
+				<ul>
+					<li><p class="listStatus">Status: In Progress</p></li>
+					<li><p class="listStatus">Date Started: May 1, 2022</p></li>
+					<li><p class="listStatus">Date Completed: N/A</p></li>
+				</ul>
+			</div>
+		</div>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
+		</div>
+	</body>
+</html>

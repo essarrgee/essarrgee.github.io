@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
+		<title>essarrgee/FreAXCardMaker</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">FreAX Card Maker</h1>
+			<div class="gamePageImageGallery">
+				<h2>Image Gallery</h2>
+				<img src="../images/freaxcardmaker_screenshot1.png" alt="Screenshot">
+			</div>
+			<div class="gamePageSection">
+				<h2>App Description</h2>
+				<p>
+					Tool for creating character info cards for my game "FreAX".
+					Customize the card with info of your character!
+					Use the Capture button to save a copy of your card as an image!
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>About</h2>
+				<p>
+					A webapp made using HTML, CSS, JavaScript.
+					The "capture" functionality was
+					created by Niklas von Hertzen. 
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://freax-card-maker.firebaseapp.com/" target="_blank">App Page (Firebase)</a></li>
+				</ul>
+			</div>
+			<div class="gamePageSection">
+				<h2>Stats</h2>
+				<ul>
+					<li><p class="listStatus">Status: Completed</p></li>
+					<li><p class="listStatus">Date Started: July 28, 2021</p></li>
+					<li><p class="listStatus">Date Completed: August 30, 2021</p></li>
+				</ul>
+			</div>
+		</div>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
+		</div>
+	</body>
+</html>
