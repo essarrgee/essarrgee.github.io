@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
+		<title>essarrgee/VolatileReaction</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">Volatile Reaction</h1>
+			<div class="gamePageImageGallery">
+				<h2>Image Gallery</h2>
+				<img src="../images/volatilereaction_screenshot1.png" alt="Screenshot">
+			</div>
+			<div class="gamePageSection">
+				<h2>Game Description</h2>
+				<p>Place bombs to clear a path to the exit in this puzzle game! 14 levels to clear!</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>About</h2>
+				<p>
+				Submission for the Roblox Developer Challenge 2023 game jam. Compared to previous
+				Roblox game jams, this game was the most complete in terms of implementation of
+				mechanics. After finishing the first few levels, we had time to add in a few
+				extra levels that further utilized these mechanics.
+				</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://www.roblox.com/games/12812052152" target="_blank">Game Page (Roblox)</a></li>
+				</ul>
+			</div>
+			<div class="gamePageSection">
+				<h2>Stats</h2>
+				<ul>
+					<li><p class="listStatus">Status: Completed</p></li>
+					<li><p class="listStatus">Date Started: March 17, 2023</p></li>
+					<li><p class="listStatus">Date Completed: March 21, 2023</p></li>
+				</ul>
+			</div>
+		</div>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
+		</div>
+	</body>
+</html>
