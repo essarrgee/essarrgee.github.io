@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="/javascript/index.js"></script>
+		<script src="/javascript/loadhtml.js"></script>
+		<script src="/javascript/imageGallery.js" defer></script>
+		<title>essarrgee/Full-Bloom</title>
+	</head>
+	<body onresize="resizeTopNav()">
+		<header>
+			<div class="topNav" id="topNav">
+			</div>
+		</header>
+		<div>
+			<h1 class="nonMainText">Full Bloom!</h1>
+			<div class="gamePageImageGallery">
+				<h2>Image Gallery</h2>
+				<img src="https://i.ibb.co/JHk1FGy/Screenshot1.png" alt="Screenshot">
+				<img src="https://i.ibb.co/m8yR65V/Screenshot3.png" alt="Screenshot">
+				<img src="https://i.ibb.co/Y7Q3WRV/Screenshot2.png" alt="Screenshot">
+				<img src="https://i.ibb.co/3z1S5VQ/Screenshot8.png" alt="Screenshot">
+			</div>
+			<div class="gamePageSection">
+				<h2>Game Description</h2>
+				<p>Oh no! Bloom locked herself inside! 
+				Solve puzzles, clear minigames, 
+				and overcome obstacles to help her get out! 
+				<br><br>
+				Full Bloom is a cute <s>psychological horror</s> adventure 
+				game with puzzle and minigame <s>and survival</s> elements.</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>About</h2>
+				<p>An upcoming puzzle/adventure horror game made in Unity.</p>
+			</div>
+			<div class="gamePageSection">
+				<h2>Links</h2>
+				<ul>
+					<li>
+						<a href="https://store.steampowered.com/app/2624090/Full_Bloom/" target="_blank">Game Page (Steam)</a>
+						<a href="https://essarrgee.itch.io/full-bloom" target="_blank">Game Page (itch.io)</a>
+					
+					</li>
+				</ul>
+			</div>
+			<div class="gamePageSection">
+				<h2>Stats</h2>
+				<ul>
+					<li><p class="listStatus">Status: In Progress</p></li>
+					<li><p class="listStatus">Date Started: September 10, 2021</p></li>
+					<li><p class="listStatus">Date Completed: N/A</p></li>
+				</ul>
+			</div>
+		</div>
+		<!--Image Gallery Modal-->
+		<div class="imageModal" id="imageModal">
+			<img id="modalGalleryImage"></img>
+		</div>
+		<div id="overlay" onclick="closeEntryModal();">
+			<button id="overlayX" onclick="closeEntryModal();">&times;</button>
+		</div>
+	</body>
+</html>
